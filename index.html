@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Docs</title>
+    <link rel="stylesheet" href="/Styles/homeLogin.css" />
+    <link rel="stylesheet" href="/Styles/global.css" />
+    <script type="module" defer src="/Scripts/loginFunctionality.js"></script>
+  </head>
+  <body>
+    <!--login form needs action attribute to redirect page-->
+    <form id="login__form" action="/Pages/documents.html">
+      <h1 id="header">Login</h1>
+      <label id="email__label" for="email">Email</label>
+      <input type="email" id="email" required />
+      <p id="error__message"></p>
+      <label id="password__label" for="password">Password</label>
+      <input type="password" id="password" required />
+      <button type="submit" id="login__btn">LOGIN</button>
+      <a href="/Pages/signup.html" id="signup">Sign up</a>
+    </form>
+  </body>
+</html>

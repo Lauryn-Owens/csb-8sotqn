@@ -1,0 +1,74 @@
+body {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#signup__form {
+  margin-top: 10%;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  height: max-content;
+}
+#signup__form #header {
+  align-self: center;
+}
+#signup__form input {
+  display: block;
+  padding: 0.5rem 0;
+}
+#signup__form #password__error__message {
+  color: red;
+}
+#signup__btn {
+  margin-top: 0.2rem;
+  background-color: var(--purple);
+  color: var(--beige);
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 0;
+  border: none;
+}
+#signup__btn:hover {
+  background-color: var(--beige);
+  color: var(--purple);
+}
+#signup__form,
+.password__requirement__list__item {
+  width: 75vw;
+  border-radius: 0.2rem;
+}
+.password__requirement__list__item:last-child {
+  margin-bottom: 2rem;
+}
+#password__requirement__list__header {
+  margin: 1.5rem 0;
+}
+.password__requirement__list__item {
+  background-color: white;
+  padding: 1rem;
+  list-style: circle;
+}
+#password__error__message {
+  display: none;
+}
+.valid {
+  color: green;
+  list-style-type: disc;
+  text-decoration: striked;
+}
+.invalid {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  #signup__form,
+  .password__requirement__list__item {
+    width: 90vw;
+  }
+}

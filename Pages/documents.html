@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Documents</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/Styles/documents.css" />
+    <link rel="stylesheet" href="/Styles/textEditor.css" />
+    <link rel="stylesheet" href="/Styles/bookmark.css">
+    <link rel="stylesheet" href="/Styles/global.css">
+    <script defer src="/Scripts/documentFunctionality.js"></script>
+    <script defer src="/Scripts/bookmarkFunctionality.js"></script>
+    <script defer src="/Scripts/logoutFunctionlity.js"></script>
+  <!--Add My API KEY--> 
+    <script src="https://cdn.tiny.cloud/1/xxs6e2tzpdrj2vmdfr22kfb2yomktvxz1yvo96mmtlwoz226/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <!--JSPDF CDN-->
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js">
+  </script>
+  </head>
+  <body>
+    <header id="page__header">
+      <a  id="logout" href="/Pages/logout.html">Logout</a>
+    </header>
+    <h1 id="bookmark__header">This Sessions Bookmarked Documents</h1>
+    <ul id="bookmark__list"></ul>
+    <form  id="search__form">
+      <input type="text" id="search__input">
+      <input type="submit" value="Search" id="search__button">
+    </form>
+    <label for="sort__form" id="sort__form__label">
+    <form id="sort__form">
+        <h1 id="sort__header">Sort Documents</h1>
+      </label>
+      <input id="sort__btn"type="radio">
+        <form id="sort__options">
+          <input id="name" value="name" name="sort__option" type="radio">
+          <label for="name"  id="name__label">Name</label>
+          <input id="last__modified" value="last modified" name="sort__option"  type="radio">
+          <label for="last__modified"  id="last__modified__label">Last Modified</label>
+          <input type="radio" value="storage used" name="sort__option" id="storage__used">
+          <label for="storage__used" id="storage__used__label">Storage Used</label>
+    </form>
+    </form>
+    <nav id=nav__bar__container>
+        <ul id="nav__list">
+        </ul>
+    </nav>
+    <button id="add__document__btn">Add document</button>
+    <ul id="document__list"></ul>
+    <div id="pdf__download__container"></div>
+    <section id="bookmarked__document"></section>
+  </body>
+</html>

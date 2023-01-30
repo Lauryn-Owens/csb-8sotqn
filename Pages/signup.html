@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Styles/signup.css" />
+    <link rel="stylesheet" href="/Styles/global.css" />
+    <script defer src="/Scripts/signupFunctionality.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main id="signup__container">
+      <!--sign up form needs action attribute to redirect page-->
+      <form id="signup__form" action="/Pages/documents.html">
+        <h1 id="header">Sign up</h1>
+        <label id="email__label" for="email">Email</label>
+        <input type="email" id="email" required />
+        <p id="email__error__message"></p>
+        <label id="password__label" for="password">Password</label>
+        <input type="password" id="password" required />
+        <label id="password__confirm__label" for="password__confirm">
+          Confirm Password</label
+        >
+        <input type="password" id="password__confirm" required />
+        <p id="password__error__message"></p>
+
+        <!--HAVE SIGN UP  BUTTON DISABLED UNTIL PASSWORD IS VALID-->
+        <button type="submit" id="signup__btn">SIGN UP</button>
+      </form>
+      <h1 id="password__requirement__list__header">Password Requirements</h1>
+
+      <li id="length" class="password__requirement__list__item">
+        Must Have Atleast 8 Characters
+      </li>
+      <li id="lower__case" class="password__requirement__list__item">
+        Must Contain Atleast 1 Lower Case Letter
+      </li>
+      <li id="upper__case" class="password__requirement__list__item">
+        Must Contain Atleast 1 Upper Case Letter
+      </li>
+      <li id="number" class="password__requirement__list__item">
+        Must Contain Atleast 1 Number
+      </li>
+      <li id="special__character" class="password__requirement__list__item">
+        Must Contain Atleast 1 Special Character
+      </li>
+    </main>
+  </body>
+</html>

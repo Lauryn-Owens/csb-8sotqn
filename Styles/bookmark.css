@@ -1,0 +1,25 @@
+#onLoadBookmarkText {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--orange);
+}
+#bookmark__list {
+  margin-left: 1rem;
+  max-height: 10rem;
+}
+.bookmark__item {
+  height: max-content;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0;
+}
+.bookmarked {
+  background-color: black;
+}
+.bookmark__delete__btn,
+.go__to__document {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+}
